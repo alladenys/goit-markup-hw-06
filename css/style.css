@@ -276,9 +276,7 @@ textarea.recole-form-feald{
     fill:var(--main-text-cl);
     align-items: center;
 }
-.iright-list:hover ::after{
-    fill:var(--accent-cl);
-}
+
 .icon-header-item2{
     margin-top: 3px;
     margin-bottom: -3px;
@@ -426,7 +424,18 @@ link:hover .icon-header-item2{
 .link-item:hover{
    color: var(--accent-cl);
 }
+nav.flex a.active{
+    position: relative;
+}
 .link-item:hover.link-item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-cl);
+    margin-top: 22px;
+}
+.active.link-item::after{
     content: "";
     display: block;
     width: 100%;
