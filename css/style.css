@@ -159,9 +159,16 @@ form.recole-form input.recole-form-feald{
     box-sizing: border-box;
     border-radius: 4px;
 }
-.recole-form input:focus svg.svg-form1{
+
+input.recole-form-feald:focus + svg.svg-form1,
+input.recole-form-feald:focus + svg.svg-form2,
+input.recole-form-feald:focus + svg.svg-form3{
     fill: var(--accent-cl);
 }
+
+
+
+
 
   
 .label-text{
@@ -192,7 +199,19 @@ textarea.recole-form-feald{
 .checkbox{
     margin-bottom: 37px;
     margin-left: 13px;
+    z-index: 1;
 }
+.checkbox:checked + svg.checkbox-svg {
+    z-index: 2;
+    fill: var(--whait-cl);
+    background:var(--accent-cl);
+  }
+
+
+
+
+
+
 .agreement-conditions{
     font-weight: normal;
     font-size: 14px;
