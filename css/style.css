@@ -78,6 +78,7 @@ body {
     padding-bottom: 40px;padding-left: 41px;
 }
 .icon-x{
+    cursor: pointer;
     display: flex;
     margin-top: 4px;
     margin-left: 4px;
@@ -149,13 +150,18 @@ body {
     padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2)
 }
-
+.recole-form-feald:focus,
+.recole-form-feald:hover{
+    color: var(--accent-cl);
+    border-radius: 4px;
+}
 form.recole-form input.recole-form-feald{
     position: relative;
 }
+.recole-form input.recole-form-feald:focus,
 .recole-form input.recole-form-feald:hover{
     cursor: pointer;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-cl);
     box-sizing: border-box;
     border-radius: 4px;
 }
