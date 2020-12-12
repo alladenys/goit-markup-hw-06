@@ -166,11 +166,6 @@ input.recole-form-feald:focus + svg.svg-form3{
     fill: var(--accent-cl);
 }
 
-
-
-
-
-  
 .label-text{
     display: block;
     padding: 0;
@@ -182,9 +177,49 @@ input.recole-form-feald:focus + svg.svg-form3{
     letter-spacing: 0.01em;
     color: #757575;
 }
-.label-text-checkbox{
-    display: block;
-    margin-top: 20px;
+
+textarea.recole-form-feald{
+    height: 120px;
+}
+   
+
+.checkbox{
+    display: none;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox+label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url(../icons/confirm.svg);
+    cursor: pointer;
+}
+
+.checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #0b76ef;
+}
+
+.fake-checkbox {
+    display: flex;
+    margin-left: 13px;
+    margin-top: 15px;
+    height: 24px;
     margin-bottom: 0;
     padding: 0;
     font-weight: normal;
@@ -192,28 +227,14 @@ input.recole-form-feald:focus + svg.svg-form3{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-top: 7px;
 }
-textarea.recole-form-feald{
-    height: 120px;
+label.fake{
+    margin: 0;padding: 0;
 }
-.checkbox{
-    margin-bottom: 37px;
-    margin-left: 13px;
-    z-index: 1;
-}
-.checkbox:checked + svg.checkbox-svg {
-    z-index: 2;
-    fill: var(--whait-cl);
-    background:var(--accent-cl);
-  }
-
-
-
-
-
-
 .agreement-conditions{
     font-weight: normal;
+    margin-left: 3px;margin-right: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
