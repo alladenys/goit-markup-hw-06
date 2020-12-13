@@ -149,11 +149,14 @@ body {
     padding-bottom: 12px;
     padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2)
+
 }
 .recole-form-feald:focus,
 .recole-form-feald:hover{
     color: var(--accent-cl);
     border-radius: 4px;
+    box-shadow: none;
+    outline: none;
 }
 form.recole-form input.recole-form-feald{
     position: relative;
